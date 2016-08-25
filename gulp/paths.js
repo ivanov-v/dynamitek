@@ -1,18 +1,16 @@
 export default {
-    baseSrc: './app',
-	baseDist: './dist',
+    baseSrc: './dev',
+	baseBuild: './build',
 
 	src: {
-		styles: './app/styles',
-		svg: './app/svg',
-		scripts: './app/scripts',
-		static: './app/static'
+		styles: './dev/styles/app.scss',
+        
+		scripts: './dev/scripts'
 	},
 
-	dist: {
-		styles:  './dist/assets/styles',
-		images:  './dist/assets/images',
-		scripts: './dist/assets/scripts',
-		static:  './dist/assets'
+	build: {
+		styles:  './build/css',
+		images:  './build/img',
+		scripts: './build/js'
 	}
 }

@@ -1,16 +1,19 @@
 'use strict';
 
 import gulp from 'gulp';
-// import rename from 'gulp-rename';
+import rename from 'gulp-rename';
 import sass from 'gulp-sass';
 import csso from 'gulp-csso';
-// import autoprefixer from 'gulp-autoprefixer';
-// import plumber from 'gulp-plumber';
-// import notify from 'gulp-notify';
-// import cleanCSS from 'gulp-clean-css';
+import autoprefixer from 'gulp-autoprefixer';
+import plumber from 'gulp-plumber';
+import notify from 'gulp-notify';
+import changed from 'gulp-changed';
+import paths from '../paths';
+
 
 gulp.task('sass', () => {
-    return gulp.src('./dev/styles/app.scss')
+    return gulp.src(paths.styles)
+        .pipe(changed(paths.build.styles))
         .pipe(plumber({ errorHandler: notify.onError(function(error) {
             var line = error.message.match(/on line \d+/m) + ' of file ' + error.message.match(/[-._a-z\/\\]+\n/i);
             var message = error.message.match(/Error: .+\n/);
@@ -25,6 +28,6 @@ gulp.task('sass', () => {
             browsers: ['last 3 versions']
         }))
         .pipe(csso())
-        .pipe(rename('styles.min.css'))
-        .pipe(gulp.dest('./public_html/css/'));
+        .pipe(rename('app.min.css'))
+        .pipe(gulp.dest(paths.build.styles));
 });
