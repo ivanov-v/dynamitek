@@ -4,13 +4,12 @@ export default {
 
 	src: {
 		styles: './dev/styles/app.scss',
-        
 		scripts: './dev/scripts'
 	},
 
 	build: {
-		styles:  './build/css',
-		images:  './build/img',
+		styles: './build/css',
+		images: './build/img',
 		scripts: './build/js'
 	}
 }

@@ -12,7 +12,7 @@ import paths from '../paths';
 
 
 gulp.task('sass', () => {
-    return gulp.src(paths.styles)
+    return gulp.src(paths.src.styles)
         .pipe(changed(paths.build.styles))
         .pipe(plumber({ errorHandler: notify.onError(function(error) {
             var line = error.message.match(/on line \d+/m) + ' of file ' + error.message.match(/[-._a-z\/\\]+\n/i);
