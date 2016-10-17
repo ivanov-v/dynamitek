@@ -5,7 +5,9 @@ import paths from '../paths';
 
 gulp.task('copy', () => {
   return gulp.src([
-      paths.src.fonts
+      paths.src.fonts,
+      paths.src.images,
+      paths.src.media
     ], {
       base: paths.baseSrc
     })
