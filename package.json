@@ -4,7 +4,7 @@
   "description": "Ivanov Vadim promo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.0.0",
-    "require-dir": "^0.3.1"
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2"
   }
 }
