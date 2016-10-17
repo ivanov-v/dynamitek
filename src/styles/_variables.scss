@@ -1,0 +1,64 @@
+// DIMENSIONS: WIDTHS, HEIGHTS
+$app-max-width: 1440px;
+$app-min-width: 1110px;
+$padding-base: 15px;
+
+// Colors: Brand
+$color-brand-1: #005693;
+$color-brand-2: #98b02e;
+$brand-warning: #cd201f;
+$color-bg: #f4f4f4;
+$color-bg-2: #efefef;
+$color-bg-3: #b0b0b0;
+$color-text: #1a212d;
+$color-text-secondary: #9b9b9b;
+$color-selection-bg: $color-brand-1;
+$color-icon: #9ab9c9;
+
+// Colors: Headings
+$headings-color: #252b33;
+
+// Colors: Links
+$color-link: $color-brand-1;
+$color-link-hover: $color-link;
+$color-link-hover-2: #b7d8f0;
+
+// Colors: Body Background
+$color-body-bg: #fff;
+
+// Buttons
+$button-bg: $color-brand-2;
+$button-bg-hover: #829b15;
+
+//inputs
+$color-border: #cbcbcb;
+$color-border-focus: #77a0bc;
+$color-border-valid: $color-brand-2;
+$color-border-invalid: $brand-warning;
+
+// Fonts: Base styles
+$font-family-1: Verdana, Arial, sans-serif;
+$font-family-2: 'Geometria', Verdana, Arial, sans-serif;
+$font-size-base: 13px;
+$line-height-base: 1.4;
+
+// Fonts: Weights
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 600;
+$font-bold: 700;
+$font-extra-bold: 800;
+
+$font-size-very-big: 62px;
+$font-size-big: 50px;
+$font-size-semi-big: 45px;
+$font-size-h1: 36px;
+$font-size-h2: 34px;
+$font-size-h3: 30px;
+$font-size-h4: 22px;
+$font-size-h5: 18px;
+$font-size-h6: 14px;
+$font-size-small: 12px;
+
+// Transition
+$transition-speed: 0.4s;

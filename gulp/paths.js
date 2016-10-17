@@ -1,10 +1,10 @@
 export default {
-    baseSrc: './dev',
+  baseSrc: './src',
 	baseBuild: './build',
 
 	src: {
-		styles: './dev/styles/app.scss',
-		scripts: './dev/scripts'
+		styles: './src/styles/app.scss',
+		scripts: './src/scripts/**/*.js'
 	},
 
 	build: {
