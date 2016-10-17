@@ -8,20 +8,12 @@ import mqpacker from 'css-mqpacker';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import plumber from 'gulp-plumber';
-import notify from 'gulp-notify';
+import server from 'browser-sync';
 import paths from '../paths';
 
 gulp.task('styles', () => {
   return gulp.src(paths.src.styles)
-    .pipe(plumber({ errorHandler: notify.onError(function(error) {
-      var line = error.message.match(/on line \d+/m) + ' of file ' + error.message.match(/[-._a-z\/\\]+\n/i);
-      var message = error.message.match(/Error: .+\n/);
-        return {
-          title: 'Sass error ' + line,
-          message: message
-        }
-      })
-    }))
+    .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer({
@@ -33,5 +25,6 @@ gulp.task('styles', () => {
     ]))
     .pipe(csso())
     .pipe(rename('app.min.css'))
-    .pipe(gulp.dest(paths.build.styles));
+    .pipe(gulp.dest(paths.build.styles))
+    .pipe(server.stream());
 });

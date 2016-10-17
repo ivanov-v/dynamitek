@@ -1,0 +1,123 @@
+.page-header {
+    min-height: 104px;
+    z-index: 10;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+
+    &--overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        box-shadow: none;
+
+        .page-header__help-button {
+            background: #fff;
+
+            &:hover {
+                background: $color-brand-1;
+                color: #fff;
+            }
+        }
+
+        .dropdown {
+            background: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    &__logo-wrapper {
+        position: relative;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        width: 112px;
+        height: 104px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #252b33;
+
+        &:hover {
+            .page-header__logo-image {
+                transform: translate3d(0, -5px, 0);
+            }
+        }
+    }
+
+    &__logo-image {
+        transition: transform 0.3s;
+    }
+
+    &__top {
+        background: #fff;
+    }
+
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 54px;
+        padding-left: 142px;
+    }
+
+    &__bottom {
+        height: 50px;
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    &__bottom-inner {
+        position: relative;
+        z-index: 2;
+        padding-left: 112px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__links-item {
+        margin-right: 40px;
+    }
+
+    &__links-link {
+        font-family: $font-family-2;
+        font-size: 12px;
+        color: #4e4e4e;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__phone-note {
+        margin-right: 16px;
+        font-family: $font-family-2;
+        font-size: 11px;
+        color: #4e4e4e;
+    }
+
+    &__phone {
+        font-size: 16px;
+        font-weight: $font-medium;
+    }
+
+    &__lang {
+        margin-left: 16px;
+    }
+
+    &__help-button {
+        background: #f5f5f5;
+    }
+}

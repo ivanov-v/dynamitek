@@ -1,0 +1,14 @@
+include ../blocks/page-header/page-header
+
+doctype html
+html(lang='ru')
+  include ../blocks/head/head
+  body.page
+    block header
+      +page-header()
+
+    main.page-main.page__main
+      block pageMainHeader
+        .page-main__header
+          .title.title--size-h1.page-main__title Заголовок
+      block content
