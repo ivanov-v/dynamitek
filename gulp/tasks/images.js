@@ -6,7 +6,7 @@ import paths from '../paths';
 
 gulp.task('images', () => {
   return gulp.src([
-    paths.build.media + '/**/*.{png,jpg,gif,svg}',
+    paths.build.media + '/**/*.{png,jpg,gif}',
     paths.build.images + '/**/*.{png,jpg,gif}'
   ], {
     base: paths.baseSrc

@@ -7,7 +7,8 @@ export default {
 		scripts: './src/scripts/**/*.js',
     fonts: './src/fonts/**/*.{woff,woff2}',
     images: './src/img/**/*.{png,jpg,gif}',
-    media: './src/media/**/*.{png,jpg,gif,svg}'
+    media: './src/media/**/*.{png,jpg,gif,svg}',
+    symbols: './src/sprite/symbols/*.svg'
 	},
 
 	build: {
