@@ -1,12 +1,12 @@
 mixin footer()
   footer.footer&attributes(attributes)
-    .container-fluid
+    .container
       .footer__main.
         main
 
-      .row.flex-items-xs-between.footer__info
-        .col-md-6
+      .columns.is-between.footer__info
+        .column.is-6.footer__info-column
           p.text-minor © 2016 Удобный сервис для поиска и подбора микрозайма. Новости, факты и рейтинг МФО.
 
-        .col-xs.col-xs-narrow.
+        .column.is-narrow.footer__info-column.
           Сделано в моризо

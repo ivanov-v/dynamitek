@@ -1,11 +1,10 @@
-$enable-flex: true;
-$enable-grid-classes: true;
-
 @import 'vendors/normalize';
 @import 'base/reset';
-@import 'vendors/bootstrap/bootstrap-grid';
+@import 'vendors/bulma/utilities/mixins';
+@import 'vendors/bulma/grid/columns';
+@import 'vendors/include-media';
 @import 'variables';
 @import 'base/fonts';
 @import 'base/base';
+@import 'fixes';
 @import 'blocks';
-@import 'utilities';
