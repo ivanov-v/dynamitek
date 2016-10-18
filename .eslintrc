@@ -1,0 +1,16 @@
+{
+  "extends": "standard",
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "space-before-function-paren": ["error", "never"],
+    "no-multiple-empty-lines": ["error", { "max": 20, "maxEOF": 20 }]
+  },
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "node": true
+  }
+}
