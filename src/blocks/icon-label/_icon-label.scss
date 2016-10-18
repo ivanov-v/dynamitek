@@ -1,0 +1,17 @@
+.icon-label {
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+
+  &__icon-wrap {
+    min-width: auto;
+    margin-right: 8px;
+  }
+
+  &__content {
+    font-size: $font-size-base;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
