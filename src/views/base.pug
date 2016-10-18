@@ -1,4 +1,5 @@
 include ../blocks/header/header
+include ../blocks/footer/footer
 
 doctype html
 html(lang='ru')
@@ -8,7 +9,6 @@ html(lang='ru')
       +header().page__header
 
     main.main.page__main
-      block pageMainHeader
-        .page-main__header
-          .title.title--size-h1.page-main__title Заголовок
-      block content
+      block pageMain
+
+    +footer().page__footer
