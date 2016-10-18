@@ -14,5 +14,6 @@ gulp.task('symbols', () => {
     .pipe(rename({ prefix: 'icon-' }))
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename('symbols.svg'))
+    .pipe(gulp.dest('./src/temp/symbols'))
     .pipe(gulp.dest(paths.build.images));
 });

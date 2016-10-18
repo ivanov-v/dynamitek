@@ -5,6 +5,9 @@ doctype html
 html(lang='ru')
   include ../blocks/head/head
   body.page
+    .svg-symbols(style={"display": "none"})
+      include ../temp/symbols/symbols.svg
+
     block header
       +header().page__header
 
