@@ -6,13 +6,13 @@ $padding-base: 15px;
 // Colors: Brand
 $color-brand-1: #005693;
 $color-brand-2: #98b02e;
-$brand-warning: #cd201f;
+$color-brand-warning: #cd201f;
 $color-bg: #f4f4f4;
 $color-bg-2: #efefef;
 $color-bg-3: #b0b0b0;
-$color-text: #1a212d;
+$color-text: #000;
 $color-text-secondary: #9b9b9b;
-$color-selection-bg: $color-brand-1;
+$color-selection-bg: $cd201f;
 $color-icon: #9ab9c9;
 
 // Colors: Headings
@@ -34,12 +34,11 @@ $button-bg-hover: #829b15;
 $color-border: #cbcbcb;
 $color-border-focus: #77a0bc;
 $color-border-valid: $color-brand-2;
-$color-border-invalid: $brand-warning;
+$color-border-invalid: $color-brand-warning;
 
 // Fonts: Base styles
-$font-family-1: Verdana, Arial, sans-serif;
-$font-family-2: 'Geometria', Verdana, Arial, sans-serif;
-$font-size-base: 13px;
+$font-family-1: 'Opensans', Arial, sans-serif;
+$font-size-base: 14px;
 $line-height-base: 1.4;
 
 // Fonts: Weights

@@ -1,33 +1,26 @@
 @font-face {
-    font-family: 'Geometria';
-    src:
-        url('../fonts/geometria.woff2') format('woff2'),
-        url('../fonts/geometria.woff') format('woff');
-    font-weight: $font-normal;
-    font-style: normal;
+  font-family: 'Opensans';
+  src:
+    url('../fonts/opensans-regular.woff2') format('woff2'),
+    url('../fonts/opensans-regular.woff') format('woff');
+  font-weight: $font-normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Geometria';
-    src:
-        url('../fonts/geometria-medium.woff2') format('woff2'),
-        url('../fonts/geometria-medium.woff') format('woff');
-    font-weight: $font-medium;
-    font-style: normal;
+  font-family: 'Opensans';
+  src:
+    url('../fonts/opensans-light.woff2') format('woff2'),
+    url('../fonts/opensans-light.woff') format('woff');
+  font-weight: $font-light;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Geometria';
-    src:
-        url('../fonts/geometria-bold.woff2') format('woff2'),
-        url('../fonts/geometria-bold.woff') format('woff');
-    font-weight: $font-bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Rouble';
-    src: url('../fonts/rouble.woff') format('woff');
-    font-weight: $font-normal;
-    font-style: normal;
+  font-family: 'Opensans';
+  src:
+    url('../fonts/opensans-bold.woff2') format('woff2'),
+    url('../fonts/opensans-bold.woff') format('woff');
+  font-weight: $font-bold;
+  font-style: normal;
 }
