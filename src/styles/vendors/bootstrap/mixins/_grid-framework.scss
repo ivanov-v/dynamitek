@@ -23,6 +23,10 @@
   @each $breakpoint in map-keys($breakpoints) {
     $breakpoint-counter: ($breakpoint-counter + 1);
 
+    .col-#{$breakpoint}-narrow {
+      flex: none;
+    }
+
     @for $i from 1 through $columns {
       .col-#{$breakpoint}-#{$i} {
         @extend %grid-column;

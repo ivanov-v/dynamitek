@@ -125,10 +125,10 @@ $link-hover-decoration: underline !default;
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 544px,
+  sm: 320px,
   md: 768px,
-  lg: 992px,
-  xl: 1200px
+  lg: 1200px,
+  xl: 1400px
 ) !default;
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 

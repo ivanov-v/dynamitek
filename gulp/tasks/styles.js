@@ -13,7 +13,14 @@ import paths from '../paths';
 
 gulp.task('styles', () => {
   return gulp.src(paths.src.styles)
-    .pipe(plumber())
+    .pipe(
+      plumber({
+        errorHandler: function(err) {
+          console.log(err);
+          this.emit('end');
+        }
+      })
+    )
     .pipe(sass())
     .pipe(postcss([
       autoprefixer({

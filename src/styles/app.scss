@@ -1,6 +1,11 @@
+$enable-flex: true;
+$enable-grid-classes: true;
+
+@import 'vendors/normalize';
 @import 'base/reset';
 @import 'vendors/bootstrap/bootstrap-grid';
 @import 'variables';
 @import 'base/fonts';
 @import 'base/base';
 @import 'blocks';
+@import 'utilities';
