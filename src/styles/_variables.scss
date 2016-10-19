@@ -3,9 +3,9 @@ $app-max-width: 1170px;
 $app-min-width: 240px;
 
 // Colors: Brand
-$color-brand-1: #005693;
+$color-brand-1: #ff3e3e;
 $color-brand-2: #98b02e;
-$color-brand-warning: #cd201f;
+$color-brand-warning: $color-brand-1;
 $color-bg: #f4f4f4;
 $color-bg-2: #efefef;
 $color-bg-3: #b0b0b0;
@@ -18,9 +18,8 @@ $color-icon: #9ab9c9;
 $headings-color: #252b33;
 
 // Colors: Links
-$color-link: $color-brand-1;
-$color-link-hover: $color-link;
-$color-link-hover-2: #b7d8f0;
+$color-link: #0e5ee7;
+$color-link-hover: $color-brand-1;
 
 // Colors: Body Background
 $color-body-bg: #fff;
