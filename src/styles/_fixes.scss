@@ -17,7 +17,7 @@
 }
 
 .is-between {
-  @include media('>=tablet') {
+  @media(min-width: $tablet) {
     justify-content: space-between;
   }
 }
