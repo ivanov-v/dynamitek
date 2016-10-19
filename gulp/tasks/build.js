@@ -13,6 +13,7 @@ gulp.task('build', (fn) => {
     'symbols',
     'templates',
     'scripts',
+    'scripts-vendors',
     fn
   );
 });

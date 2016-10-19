@@ -34,4 +34,12 @@ gulp.task('serve', () => {
   watch(['./src/**/*.pug'], () => {
     gulp.start('templates');
   });
+
+  watch(['./src/sprite/symbols/*.svg'], () => {
+    gulp.start('symbols');
+  });
+
+  watch(['./src/scripts/vendors/*.js'], () => {
+    gulp.start('scripts-vendors');
+  });
 });
