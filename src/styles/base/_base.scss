@@ -23,20 +23,18 @@ textarea {
 
 a {
   color: $color-link;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
     color: $color-link-hover;
-    text-decoration: underline;
-  }
-
-  &:focus {
-    text-decoration: none;
-    outline: none;
   }
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+svg:not(:root) {
+  overflow: hidden;
 }

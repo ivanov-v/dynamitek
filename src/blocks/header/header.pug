@@ -1,4 +1,22 @@
+include ../icon/icon
+
 mixin header()
   header.header&attributes(attributes)
-    .container-fluid
-      p HEADER
+    .container
+      .header__inner
+        .nav-base
+          a.logo.nav-base__logo
+            img.logo__image(src="/img/logo.svg", height="64", width="127")
+
+          ul.menu
+            li.menu__item
+              a(href="#")
+                +icon("portfolio", "15", "15").menu__link-icon
+                span.menu__link-text Компании
+
+            li.menu__item
+              a.menu__link(href="#") Новости о микрозаймах
+
+          button.hamburger.hamburger--elastic(type="button", area-label="Menu", aria-controls="navigation")
+            span.hamburger-box
+              span.hamburger-inner
