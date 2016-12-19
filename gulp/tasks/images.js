@@ -1,8 +1,8 @@
 'use strict';
 
-import gulp from 'gulp';
-import imagemin from 'gulp-imagemin';
-import paths from '../paths';
+const gulp = require('gulp');
+const paths = require('../paths');
+const imagemin = require('gulp-imagemin');
 
 gulp.task('images', () => {
   return gulp.src(paths.src.images)

@@ -1,8 +1,8 @@
 'use strict';
 
-import gulp from 'gulp';
-import webpack from 'webpack-stream';
-import webpackConfig from '../../webpack.config.babel.js';
+const gulp = require('gulp');
+const webpack = require('webpack-stream');
+const webpackConfig = require('../../webpack.config.babel.js');
 
 gulp.task('scripts', function() {
   webpackConfig.watch = false;

@@ -1,9 +1,9 @@
 'use strict';
 
-import gulp from 'gulp';
-import server from 'browser-sync';
-import watch from 'gulp-watch';
-import paths from '../paths';
+const gulp = require('gulp');
+const server = require('browser-sync');
+const watch = require('gulp-watch');
+const paths = require('../paths');
 
 gulp.task('serve', () => {
   server.init({

@@ -1,17 +1,17 @@
 'use strict';
 
-import gulp from 'gulp';
-import rename from 'gulp-rename';
-import sass from 'gulp-sass';
-import csso from 'gulp-csso';
-import mqpacker from 'css-mqpacker';
-import postcss from 'gulp-postcss';
-import autoprefixer from 'autoprefixer';
-import plumber from 'gulp-plumber';
-import server from 'browser-sync';
-import paths from '../paths';
+const gulp = require('gulp');
+const rename = require('gulp-rename');
+const sass = require('gulp-sass');
+const csso = require('gulp-csso');
+const mqpacker = require('css-mqpacker');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const plumber = require('gulp-plumber');
+const server = require('browser-sync');
+const paths = require('../paths');
 
-gulp.task('styles', () => {
+gulp.task('styles', function() {
   return gulp.src(paths.src.styles)
     .pipe(
       plumber({

@@ -1,8 +1,8 @@
 'use strict';
 
-import gulp from 'gulp';
-import del from 'del';
-import paths from '../paths';
+const gulp = require('gulp');
+const del = require('del');
+const paths = require('../paths');
 
 gulp.task('clean', () => {
   return del(paths.baseBuild);

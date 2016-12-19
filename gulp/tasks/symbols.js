@@ -1,10 +1,10 @@
 'use strict';
 
-import gulp from 'gulp';
-import rename from 'gulp-rename';
-import svgmin from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
-import paths from '../paths';
+const gulp = require('gulp');
+const rename = require('gulp-rename');
+const svgmin = require('gulp-svgmin');
+const svgstore = require('gulp-svgstore');
+const paths = require('../paths');
 
 gulp.task('symbols', () => {
   return gulp.src(paths.src.symbols)

@@ -1,11 +1,11 @@
 'use strict';
 
-import gulp from 'gulp';
-import pug from 'gulp-pug';
+const gulp = require('gulp');
+const pug = require('gulp-pug');
 // import pugInheritance from 'gulp-pug-inheritance';
-import plumber from 'gulp-plumber';
+const plumber = require('gulp-plumber');
 // import cache from 'gulp-cached';
-import paths from '../paths';
+const paths = require('../paths');
 
 gulp.task('templates', function buildHTML() {
   return gulp.src(paths.src.views)

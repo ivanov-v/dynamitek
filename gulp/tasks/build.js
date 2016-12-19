@@ -1,7 +1,7 @@
 'use strict';
 
-import gulp from 'gulp';
-import run from 'run-sequence';
+const gulp = require('gulp');
+const run = require('run-sequence');
 
 gulp.task('build', (fn) => {
   run(
