@@ -2,7 +2,7 @@
 
 const gulp = require('gulp');
 const webpack = require('webpack-stream');
-const webpackConfig = require('../../webpack.config.babel.js');
+const webpackConfig = require('../../webpack.config.js');
 
 gulp.task('scripts', function() {
   webpackConfig.watch = false;
